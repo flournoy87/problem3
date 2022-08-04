@@ -103,6 +103,7 @@ footer span {
     font-size: 50px;
 }
 
+/*--Smaller Screens--*/
 @media only screen and (max-width: 700px) and (min-width: 550px) {
     .card h3 {
         font-size: 15px;
@@ -116,15 +117,9 @@ footer span {
     }
 
     .button {
-    position: absolute;
-    bottom: 25px;
     right: 8px;
     height: 25px;
     width: 25px;
-    background-color: #50d8d7;
-    color: white;
-    border: none;
-    border-radius: 25px;
     font-size: 17px;
 }
     
@@ -149,31 +144,19 @@ footer span {
     }
     
     .content {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
         margin: 32px 5px;
-        flex-wrap: nowrap;
-        gap: 32px;
-        flex: 1 1 auto;
-        
+    
     }
     .row1, .row2, .row3 {
-        display: flex;
         flex-direction: column;
-        gap: 32px;
-        flex: 1 1 auto;
         
     }
     
     .card {
-        display: flex;
         flex-direction: row;
         align-items: center;
         height: 100px;
         width: 475px;
-        box-shadow: 3px 3px whitesmoke;
-        position: relative;
     }
     
     .card img {
@@ -195,39 +178,18 @@ footer span {
     }
     
     .tag {
-        margin-top: 5px;
-        margin-bottom: 12px;
-        margin-left: 10px;
         font-size: 16px;
-        background-color: whitesmoke;
         padding: 4px;
         text-align: center;
     }
     
     .button {
-        position: absolute;
         bottom: 30px;
         right: 15px;
-        height: 35px;
-        width: 35px;
-        background-color: #50d8d7;
-        color: white;
-        border: none;
-        border-radius: 25px;
-        font-size: 25px;
     }
     /* Mobile-Footer*/
     footer {
-        background-color: whitesmoke;
-        display: flex;
-        flex-basis: 100%;
-        justify-content: center;
-        align-items: center;
         margin-top: 50px;
         height: 250px;
-    }
-    
-    footer span {
-        font-size: 50px;
     }
   }

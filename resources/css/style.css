@@ -1,7 +1,6 @@
 /* Body */
 body {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
 }
 
 /* Header */
@@ -14,7 +13,6 @@ header {
 header h1 {
     color: white;
     font-size: 16px;
-    width: 100%;
     margin-left: 20px;
 }
 
@@ -24,27 +22,153 @@ main {
     flex-direction: column;
 }
 
+h2 {
+    margin: 50px 72px 0px 72px;
+    font-size: 30px;
+}
+
 .content {
     display: flex;
     justify-content: center;
     margin: 32px 72px;
     flex-wrap: wrap;
     gap: 32px;
+    
 }
 
-.content > * {
-   
-}
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    max-width: 532px;
-    height: 300px;
+    width: 300px;
+    height: auto;
+    box-shadow: 3px 3px whitesmoke;
+    position: relative;
+    
 }
 
 .card img {
-    height: auto;
+    height: 130px;
     width: 100%;
 }
+
+.card h3 {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.tag {
+    margin-top: 5px;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    font-size: 12px;
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
+.button {
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    height: 35px;
+    width: 35px;
+    background-color: #50d8d7;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 25px;
+  
+}
+
+/* Footer */
+footer {
+    background-color: whitesmoke;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+footer span {
+    font-size: 50px;
+}
+
+/* --Mobile--*/
+@media only screen and (max-width: 550px) {
+    /* Header */
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Main */
+    h2 {
+        margin: 50px 72px 0px 72px;
+        font-size: 40px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 32px 72px;
+        flex-wrap: nowrap
+        gap: 32px;
+        
+    }
+    
+    
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        width: 300px;
+        height: auto;
+        box-shadow: 3px 3px whitesmoke;
+        position: relative;
+        
+    }
+    
+    .card img {
+        height: 130px;
+        width: 100%;
+    }
+    
+    .card h3 {
+        margin-top: 12px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    
+    .tag {
+        margin-top: 5px;
+        margin-bottom: 12px;
+        margin-left: 10px;
+        font-size: 12px;
+        background-color: whitesmoke;
+        padding: 5px;
+    }
+    
+    .button {
+        position: absolute;
+        bottom: 25px;
+        right: 20px;
+        height: 35px;
+        width: 35px;
+        background-color: #50d8d7;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-size: 25px;
+      
+    }
+  }

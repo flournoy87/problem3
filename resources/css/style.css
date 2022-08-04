@@ -192,4 +192,8 @@ footer span {
         margin-top: 50px;
         height: 250px;
     }
+
+    footer span {
+        font-size: 60px;
+    }
   }

@@ -30,22 +30,29 @@ h2 {
 .content {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin: 32px 72px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 32px;
+    flex: 1 1 auto;
     
 }
-
+.row1, .row2, .row3 {
+    display: flex;
+    gap: 32px;
+    flex: 1 1 auto;
+    
+}
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    flex: 1 1 auto;
+    height: 210px;
     width: 300px;
-    height: auto;
     box-shadow: 3px 3px whitesmoke;
     position: relative;
-    
 }
 
 .card img {
@@ -80,7 +87,6 @@ h2 {
     border: none;
     border-radius: 25px;
     font-size: 25px;
-  
 }
 
 /* Footer */
@@ -97,9 +103,36 @@ footer span {
     font-size: 50px;
 }
 
+@media only screen and (max-width: 700px) and (min-width: 550px) {
+    .card h3 {
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    .tag {
+        font-size: 9px;
+        margin-left: 5px;
+    }
+
+    .button {
+    position: absolute;
+    bottom: 25px;
+    right: 8px;
+    height: 25px;
+    width: 25px;
+    background-color: #50d8d7;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 17px;
+}
+    
+}
+    
 /* --Mobile--*/
 @media only screen and (max-width: 550px) {
-    /* Header */
+    /* Mobile-Header */
     header {
         display: flex;
         justify-content: center;
@@ -109,59 +142,72 @@ footer span {
         font-size: 24px;
     }
 
-    /* Main */
+    /* Mobile-Main */
     h2 {
-        margin: 50px 72px 0px 72px;
+        margin: 50px 5px 0px 5px;
         font-size: 40px;
     }
     
     .content {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        margin: 32px 72px;
-        flex-wrap: nowrap
+        flex-direction: column;
+        margin: 32px 5px;
+        flex-wrap: nowrap;
         gap: 32px;
+        flex: 1 1 auto;
         
     }
-    
+    .row1, .row2, .row3 {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        flex: 1 1 auto;
+        
+    }
     
     .card {
         display: flex;
         flex-direction: row;
-        align-items: baseline;
-        width: 300px;
-        height: auto;
+        align-items: center;
+        height: 100px;
+        width: 475px;
         box-shadow: 3px 3px whitesmoke;
         position: relative;
-        
     }
     
     .card img {
-        height: 130px;
-        width: 100%;
+        height: 100px;
+        width: 35%;
     }
     
+    .card-text {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
     .card h3 {
-        margin-top: 12px;
-        margin-bottom: 5px;
+        margin-top: 10px;
+        margin-bottom: 7px;
         margin-left: 10px;
-        font-size: 20px;
+        font-size: 25px;
     }
     
     .tag {
         margin-top: 5px;
         margin-bottom: 12px;
         margin-left: 10px;
-        font-size: 12px;
+        font-size: 16px;
         background-color: whitesmoke;
-        padding: 5px;
+        padding: 4px;
+        text-align: center;
     }
     
     .button {
         position: absolute;
-        bottom: 25px;
-        right: 20px;
+        bottom: 30px;
+        right: 15px;
         height: 35px;
         width: 35px;
         background-color: #50d8d7;
@@ -169,6 +215,19 @@ footer span {
         border: none;
         border-radius: 25px;
         font-size: 25px;
-      
+    }
+    /* Mobile-Footer*/
+    footer {
+        background-color: whitesmoke;
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        height: 250px;
+    }
+    
+    footer span {
+        font-size: 50px;
     }
   }
